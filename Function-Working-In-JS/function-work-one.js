@@ -3,6 +3,7 @@ var x = 1;
 // as 'Hoisting' in javascript.
 a();
 b();
+console.log(x);
 
 function a(){
     var x = 10;
