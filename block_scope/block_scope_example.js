@@ -6,4 +6,12 @@
     //var will be stored in global execution context.
 
     //This is why, everyone says let and const are blocked scoped.
+
+    console.log(a);
+    console.log(b);
+    console.log(c);
 }
+
+console.log(c);
+console.log(a); //Error will be thrown from this line.
+console.log(b);
