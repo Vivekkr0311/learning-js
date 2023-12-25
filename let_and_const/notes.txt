@@ -1,0 +1,31 @@
+Memory allocation is called 'Hoisting'.
+let and const are also hoisted in javascript, but it is hosted in
+temporal dead zone.
+
+-> let and const are hoisted. we cant use them before initialization is result of "temporal dead zone".
+-> js use diff memory than global execution context to store let and cost. which is reason behind "temporal dead zone"
+-> level of strictness ... var<<let<<const.
+-> var //no temporal dead zone, can redeclare and re-initialize, stored in GES
+    let //use TDZ, can't re-declare, can re-initialize, stored in separate memory
+    const //use TDZ, can't re-declare, can't re-initialize, stored in separate memory
+-> syntax error is similar to compile error. while type and reference error falls under run time error.
+-> syntax error ... violation of JS syntax
+    type error ...  while trying to re-initialize const variable
+    reference error ... while trying to access variable which is not there in global memory.
+
+
+Example:
+console.log(a);
+//It will give an error, 'you cannot access before initialization'. Why ??
+//because 'a' is in temporal dead zone. As soon as a value is assigned to 
+//a variable which is 'let', the variable comes out from temporal dead zone.
+
+let a = 10;
+
+<------------->
+Example:
+let a = 10;
+console.log(a);
+
+//Here, variable is initilized hence it is not in temporal dead zone,
+//so we can access it. No error will be thrown.
