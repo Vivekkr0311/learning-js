@@ -3,3 +3,13 @@ Closure is a function which is bind with its lexical environment.
 Closure :Function bundled with its lexical environment is known as a closure. 
 Whenever function is returned, even if its vanished in execution context but still it remembers the reference it was pointing to. 
 Its not just that function alone it returns but the entire closure and that's where it becomes interesting !! 
+
+Uses of Closuers:
+ - Module Design
+ - Currying
+ - Functions like once
+ - Memoize
+ - Maintaining state in aync world
+ - setTimeouts
+ - Iterators
+ - and many more...
