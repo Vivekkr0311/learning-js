@@ -32,3 +32,5 @@ x();
 
 //And each time javascripts takes back those function into the call stack one by one
 //by specified timeouts.
+
+//To fix this output we just need to use 'let' instead of 'var' for 'i'.
