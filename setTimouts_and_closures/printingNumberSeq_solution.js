@@ -17,3 +17,6 @@ x();
 //take new copy of 'i' in its 'Closure'.
 
 //So each function closure points to different reference to the new value of 'i'.
+
+//It is working with 'let' is just because 'let' is blocked scoped,
+//for loop creates new copy of 'i' each time.
