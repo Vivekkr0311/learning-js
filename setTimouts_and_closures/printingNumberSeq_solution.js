@@ -15,3 +15,5 @@ x();
 //So at last 5 copies of 'i' is created each having a value 1, 2, 3, 4, and 5.
 //And in each call, setTimeout puts the function in separate location with new 'i (1, 2, 3, 4 and 5) * 1000', and function will
 //take new copy of 'i' in its 'Closure'.
+
+//So each function closure points to different reference to the new value of 'i'.
