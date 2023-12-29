@@ -12,4 +12,19 @@ Ans: Eacn and every function in javascript has access to its
     where it was originally present in the code.
 
 Q3: Can you give example of this whatever you explained ??
-Ans: 
+Ans: function outer(){
+        var a = 10;
+        function inner(){
+            console.log(a);
+        }
+        return inner;
+    }
+
+    outer()();
+
+Q4: What did you do outer()() ??
+Ans: outer()() is used here to execute the function which is returned by outer();.
+    It is same as writing:
+
+    var close = outer();
+    close();
