@@ -111,3 +111,51 @@ ans: Output: 10 Helloworld 20
     We did not have "let a = 10;" inside outer, then it would have printed '100'.
     Because at first javascript looks for local scope then goes to global scope if variable is
     not found in local scope.
+
+    If we had like:
+    function outest(){
+            var c = 20;
+            function outer(b){
+                function inner(){
+                    console.log(a);
+                }
+                //let a = 10;
+                return inner;
+            }
+            return outer;
+        }
+
+        let a = 100;
+        var close = outest()("Helloworld");
+        close();
+
+        Then output would be: 10 Helloworld 100
+
+        And if 'a' was not in global also, it would throw a 'reference error'.
+        Because 'a' is not defined in anywhere in the scope chain.
+        If we had like:
+            function outest(){
+                var c = 20;
+                function outer(b){
+                    function inner(){
+                         console.log(a);
+                    }
+                    //let a = 10;
+                     return inner;
+                }
+                return outer;
+             }
+
+            //let a = 100;
+            var close = outest()("Helloworld");
+            close();
+
+            Output: ReferenceError
+
+Q10: Can you tell me advantages of Closure ??
+ans: Closure is used in:
+        1. Module pattern
+        2. Function curry
+        3. Higher order functions
+        4. Memoize
+        5. It helps in data hidding and encapsulation
