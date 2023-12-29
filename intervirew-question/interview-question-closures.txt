@@ -4,4 +4,12 @@ Ans: A function with its outer environment forms a Closure.
     scope bundled together, forms a Closure.
 
 Q2: Can you explain little bit more about Closure ??
+Ans: Eacn and every function in javascript has access to its
+    lexical environment, means it has access variable and stuff
+    present in its parent.
+    So even when these function are executed in different scope not
+    in original scope, it still remembers its outer lexical environment
+    where it was originally present in the code.
+
+Q3: Can you give example of this whatever you explained ??
 Ans: 
