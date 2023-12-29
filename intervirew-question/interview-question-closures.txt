@@ -28,3 +28,61 @@ Ans: outer()() is used here to execute the function which is returned by outer()
 
     var close = outer();
     close();
+
+Q5: What if we replace "var a = 10;" just right before return ??
+    Like:
+        function outer(){
+            function inner(){
+                console.log(a);
+            }
+            var a = 10;
+            return inner;
+        }
+Ans: Nothing will changes, output will be same. It will still form a Closure and
+    it will work in the same way as before.
+
+Q6: What if we change "var" to "let" ??
+    Like:
+        function outer(){
+            function inner(){
+                console.log(a);
+            }
+            let a = 10;
+            return inner;
+        }
+ans: "let" is blocked scoped, but still this code will behave in the same way.
+    So, inner function still forms a Closure even if the 'a' is 'let'.
+
+Q7: What if outer function has some parameter ??
+    Like:
+        function outer(b){
+            function inner(a){
+                console.log(a, b);
+            }
+            var a = 10;
+            return inner;
+        }
+
+        var close = outer("Hello, world!")
+        close();
+ans: Output will be, "10 Hello, world!"
+    Parameter 'b' to outer function still comes in lexical environment of inner.
+    Therefore, it still behave in the same way.
+
+Q8: What if outer function is nested inside a function ??
+    Like:
+        fuction outest(){
+            var c = 20;
+            function outer(b){
+                function inner(){
+                    console.log(a, b, c);
+                }
+                return inner;
+            }
+            return outer;
+        }
+
+        var close = outest()("Helloworld!);
+        close();
+ans: Output: 10 Helloworld! 20
+    It still forms a Closure.
