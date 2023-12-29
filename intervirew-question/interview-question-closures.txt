@@ -1,0 +1,7 @@
+Q1: What is Closure in javascript ??
+Ans: A function with its outer environment forms a Closure.
+    In other words, closure is combination of function and its lexical
+    scope bundled together, forms a Closure.
+
+Q2: Can you explain little bit more about Closure ??
+Ans: 
