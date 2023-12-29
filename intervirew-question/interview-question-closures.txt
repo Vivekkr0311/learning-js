@@ -86,3 +86,28 @@ Q8: What if outer function is nested inside a function ??
         close();
 ans: Output: 10 Helloworld! 20
     It still forms a Closure.
+
+Q9: What if we have conflicting variable in the global scope ??
+    Like:
+        function outest(){
+            var c = 20;
+            function outer(b){
+                function inner(){
+                    console.log(a);
+                }
+                let a = 10;
+                return inner;
+            }
+            return outer;
+        }
+
+        let a = 100;
+        var close = outest()("Helloworld");
+        close();
+ans: Output: 10 Helloworld 20
+    The referene to 'a' which is inside lexical enviroment of inner is pointing to 10,
+    not to 100. This is why, we get this output.
+
+    We did not have "let a = 10;" inside outer, then it would have printed '100'.
+    Because at first javascript looks for local scope then goes to global scope if variable is
+    not found in local scope.
