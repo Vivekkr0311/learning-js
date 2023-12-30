@@ -219,3 +219,29 @@ ans: counter2 will have fresh new scope of variable "count". It will start count
         1
         2 //These 1 and 2 are printed by calling counter1() two times.
         1 //These 1 is printed by calling counter2().
+
+Q14: Can this code is scalable, if we want to add decrement counter, can we scale this code ??
+ans: This code is not following a good way, we consider that kind of scnenario.
+     We can use "Constructor functions" for such scalability. 
+
+    Code:
+        function Counter(){
+            var count = 0;
+            this.incrementCounter = function (){
+                count++;
+                console.log(count);
+            }
+            this.decrementCounter = function (){
+                count--;
+                console.log(count);
+            }
+        }
+        var counter1 = new Counter();
+
+        counter1.incrementCounter();
+        counter1.incrementCounter();
+        counter1.decrementCounter();
+
+       - Constructor function name should start with first letter being capital.
+       - Then we make a call to this using "new" keyword.
+       - This function still forms a Closure with the variable "count".
