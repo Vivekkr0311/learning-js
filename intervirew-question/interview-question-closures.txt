@@ -180,8 +180,13 @@ ans: If we have code like:
         var count = 0;
         function countIncrement(){
             count++;
+            console.log(count);
         }
     }
+
+    var counter1 = counter();
+    counter1();
+    counter1();
 
     console.log(count);
     We wrapped our code inside the function, now variable "count" is not accessible
