@@ -159,3 +159,11 @@ ans: Closure is used in:
         3. Higher order functions
         4. Memoize
         5. It helps in data hidding and encapsulation
+
+Q11: What is data hidding and encapusulation, and how does it work ??
+ans: If we have some variable and we don't want other functions to access it or read it, we call this
+     data hidding.
+     We encapulate the data in such a way that other part of our code cannot access it.
+
+Q12: Can you example of it ??
+ans: 
