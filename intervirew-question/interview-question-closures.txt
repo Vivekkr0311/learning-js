@@ -166,4 +166,24 @@ ans: If we have some variable and we don't want other functions to access it or 
      We encapulate the data in such a way that other part of our code cannot access it.
 
 Q12: Can you example of it ??
-ans: 
+ans: If we have code like:
+    var count = 0;
+    function countIncrement(){
+        count++;
+    }
+
+    Anybody in our code can access this "count". But we want this not to happend
+    we can make use of Clousure to implement data hidding/ privacy to this variable.
+
+    Like:
+    function countFun(){
+        var count = 0;
+        function countIncrement(){
+            count++;
+        }
+    }
+
+    console.log(count);
+    We wrapped our code inside the function, now variable "count" is not accessible
+    from outside the function "coundFun".
+    It will give a "ReferenceError".
