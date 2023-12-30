@@ -188,7 +188,34 @@ ans: If we have code like:
     counter1();
     counter1();
 
+Output:
+    1
+    2
+
     console.log(count);
     We wrapped our code inside the function, now variable "count" is not accessible
     from outside the function "coundFun".
     It will give a "ReferenceError".
+
+Q13: What will happend if we have code something like this:
+    Code:
+    function counter(){
+        var count = 0;
+        return function incrementCounter(){
+            count++;
+            console.log(count);
+        }
+    }
+
+    var counter1 = counter();
+    counter1();
+    counter1();
+
+    var counter2 = counter();
+    counter2();
+
+ans: counter2 will have fresh new scope of variable "count". It will start counting from 0 from start.
+    Output:
+        1
+        2 //These 1 and 2 are printed by calling counter1() two times.
+        1 //These 1 is printed by calling counter2().
