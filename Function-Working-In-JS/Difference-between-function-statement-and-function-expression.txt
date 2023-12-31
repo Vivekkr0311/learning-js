@@ -1,0 +1,30 @@
+The difference between function statement and function expression in
+javascript is "Hoisting".
+
+Lets take an example.
+
+
+a();
+b();
+function a(){
+    console.log("a is called");
+}
+
+var b = function(){
+    console.log("b is called");
+}
+
+Output: a is called
+        TypeError: b is not a function
+
+During memory creation phase, 'a' is created in the scope and entire function is saved in the 'a'
+so, during code execution phase, javascript before hitting "a();" knew it is function.
+
+But During memory creation phase 'b' is created and "undefined" is assigned to it,
+so, during code execution phase, while executing line "b();" javascript knew "b" as variable
+whose stores special keyword "undefined".
+When javascript, during its code execution phase hits line "var b = function() { ... }" hits this line
+then only javascript get to know "b" should store a function.
+
+So, this is major difference between function statement and function expression.
+        
