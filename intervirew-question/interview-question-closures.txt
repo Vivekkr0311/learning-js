@@ -256,3 +256,24 @@ Q16: What is a Garbage Collector in Javascript ?? What does it do ??
 ans: Garbage collector is like a program which is with javascript engine. Which frees unutilized memories.
      Javascript is high level language, unlike C/ C++ where it is resbonsibility of the developer to free up the
      unused memory, in javascript it is done by javascript engine.
+
+Q17: What is relation between Garbage Collector and Closures ??
+        Relationship between Garbage Collector, Memory leaks and Closures.
+ans: Lets take example:
+        Code:
+            function a(){
+                var x = 0;
+                return function b(){
+                    console.log(x);
+                }
+            }
+
+            var y = a(); //from here 'y' stores entire closure of 'b' because later in this program
+            // we might need to call 'y' again, in that case we will need variable 'x'. This is why
+            // 'x' is not freed by Garbage Collector.
+
+            y();
+
+
+    But most of the new javascript engine like v8 has smart garbage collector. If variables are unreachable they
+    are collected by the garbage collector.
