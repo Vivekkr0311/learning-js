@@ -5,9 +5,9 @@
 //Like:
 //This will give a syntax error. Because while creating functions using statement requires a name.
 
-function (){
+// function (){
 
-}
+// }
 
 //So, if it give a syntax error what is use of anonymous function.
 
