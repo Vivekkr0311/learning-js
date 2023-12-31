@@ -277,3 +277,19 @@ ans: Lets take example:
 
     But most of the new javascript engine like v8 has smart garbage collector. If variables are unreachable they
     are collected by the garbage collector.
+
+Q18: What does mean Smartaly Collected ??
+ans: Lets take example:
+        Code:
+            function a(){
+                var x = 0, z = 10;
+                return function b(){
+                    console.log(x);
+                }
+            }
+
+            var y = a();
+
+    In this case when closure is formed, only variable 'x' is taken into the Closure, not the 'z' because
+    it is not used anywhere in the code. Hence, it is collected by the Garbage Collector.
+
