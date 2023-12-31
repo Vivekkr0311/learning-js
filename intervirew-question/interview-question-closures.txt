@@ -245,3 +245,9 @@ ans: This code is not following a good way, we consider that kind of scnenario.
        - Constructor function name should start with first letter being capital.
        - Then we make a call to this using "new" keyword.
        - This function still forms a Closure with the variable "count".
+
+Q15: Tell me about disadvantages of Closures.
+ans:  - Over consumption of memories, sometimes Closure consumes so much memories and those
+        memories are not garbage collected till the program expires. It is kind accumulating lot of memory.
+      - The above disadvantage can lead to memory leaks.
+      - It can also freeze the browser.
