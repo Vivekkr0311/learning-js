@@ -4,6 +4,8 @@
 // - functions can be stored in a variable as value.
 // This ability is known as "First class functions".
 
+//Sometimes it is called "functions are first class citizens".
+
 function a(){
     console.log("a normal function.")
 }
