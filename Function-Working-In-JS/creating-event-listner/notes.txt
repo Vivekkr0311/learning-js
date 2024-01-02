@@ -1,0 +1,4 @@
+When button is clicked, then the callback function which is passed into the function
+"addEventListener" is put into the callstack, so that it will be executed by the javascript.
+Otherwise javascript will keep this callback somewhere else and will until the button is clicked,
+as soon as button is clicked javascript puts this callback function into the callstack.
