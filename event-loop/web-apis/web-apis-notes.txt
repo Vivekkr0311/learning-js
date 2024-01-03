@@ -17,3 +17,11 @@ So, if you want to use "setTimeout".
 You have to use "window.setTimeout()".
 But as these "web apis" are present in global object, we can use them without mention "window".
 like: "setTimeout" instead of "window.setTimeout"
+
+Call back queue: When setTimeout puts the call back function into some other location, and after
+                 the specified time when our callback function needs to be inseter into call stack,
+                 our callback function does not go the call stack directly.
+                 Callback function is first inserted into the callback queue.
+Event loop:      Then event loop consistently checks if something is in the callback queue, if 
+                 there is any function in the callback queue, event loop will take it and put it into
+                 the call stack, so that javascript can execute that callback function now.
