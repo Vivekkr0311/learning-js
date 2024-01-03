@@ -1,0 +1,8 @@
+Everytime we create a event listener a Closure is formed with it.
+And this closure always stays in the memory, because we don't when we may need
+to call this event listener.
+
+So if we have so many event listener in our page then all these event listner will form a closure
+and these will consume lot of memory which can make our page very slow.
+
+To avoid such situations we remove this event listeners from javascript memory.
