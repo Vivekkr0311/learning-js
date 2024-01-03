@@ -1,0 +1,19 @@
+To access all features of our web browser, in javascript we use "web apis".
+
+Some "web apis" are:
+ - setTimeout() -> setTimeout is not a part of the javascript.
+ - DOM api      -> It is also not part of the javascript. (document.addListener )
+ - fetch()      -> Not part of the javascript.
+ - LocalStorage -> Not part of the javascript.
+ - console      -> Not part of the javascript. (console.log())
+ - Location     -> Not part of the javascript.
+ - and there are a lot more.
+
+Javascript engine give all these power to use these features of web browser.
+In browsers we make use of these browser feature using global object in case of browsers
+we have global object "window".
+
+So, if you want to use "setTimeout".
+You have to use "window.setTimeout()".
+But as these "web apis" are present in global object, we can use them without mention "window".
+like: "setTimeout" instead of "window.setTimeout"
