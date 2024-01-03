@@ -5,4 +5,6 @@ to call this event listener.
 So if we have so many event listener in our page then all these event listner will form a closure
 and these will consume lot of memory which can make our page very slow.
 
-To avoid such situations we remove this event listeners from javascript memory.
+To avoid such situations we remove this event listeners from javascript memory,
+and when these event listeners are removed by us, then javascript garbage collector
+will remove all the variable held by the closure of these event listener.
