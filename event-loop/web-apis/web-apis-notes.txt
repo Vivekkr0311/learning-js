@@ -25,3 +25,7 @@ Call back queue: When setTimeout puts the call back function into some other loc
 Event loop:      Then event loop consistently checks if something is in the callback queue, if 
                  there is any function in the callback queue, event loop will take it and put it into
                  the call stack, so that javascript can execute that callback function now.
+                 Event loop also keep checking the call stack.
+                 As soon as event loop sees call stack is empty and there is one function waiting in the
+                 callback queue to be executed, event loop take that function from the callback queue and puts
+                 it into the call stack to be executed.
