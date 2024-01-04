@@ -29,3 +29,10 @@ Event loop:      Then event loop consistently checks if something is in the call
                  As soon as event loop sees call stack is empty and there is one function waiting in the
                  callback queue to be executed, event loop take that function from the callback queue and puts
                  it into the call stack to be executed.
+
+Q: Why do need this callback queue ??
+ans: There could be so many callback function associated with many event listeners, 
+    if all of them are triggered at once it will be chaos to execute all of these
+    callback functions.
+    This is why, we need this callback queue so that each one of them can be executed one after
+    the other, and this way each function will get the chance to be execute.
