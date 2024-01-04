@@ -10,3 +10,20 @@ ans: fetch() it basically makes a API call. This fetch() function returns a "pro
      And "MicroTask Queue" has higher priority than the "callback queue".
      Then our event loop will keep checking if the callstack is empty, then if it finds some functions
      inside "callback queue" or "MicroTask queue" then it will take it and execute it.
+
+Mutation observer: Mutation observer keeps checking if there is any changes in the DOM tree. So that
+                   it can execute some callback function.
+
+Promises and Mutation observer goes into the "MicroTask Queue".
+And all the callback functions that comes from setTimeout and DOM APIs will go into the
+callback queue. Some people call "Callback queue" as "Task Queue".
+
+If there are three callback function in the "MicroTask Queue" and only on callback function in
+"callback queue" then "Event loop" will only execute "callback function" from the
+"callback queue" when all the callback from "MicroTask Queue" is executed and it is empty.
+
+Starvation In Callback Queue: If there a callback inside "MicroTask Queue" that creates another
+                              callback in the "MicroTask Queue", and it keeps happening in the
+                              chain reaction.
+                              Then, the callback which is present in the "Callback Queue" will starv.
+                              This is called "Starvation of function in the callback queue".
