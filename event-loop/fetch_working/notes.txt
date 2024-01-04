@@ -1,0 +1,12 @@
+Q: What is fetch();
+ans: fetch() it basically makes a API call. This fetch() function returns a "promise".
+     We pass a callback function to this fetch() function, this callback function is executed
+     when this promise is resolved.
+
+     This callback function is not executed directly.
+     When this promise is resolved, the callback function provided in fetch() function is put into
+     the "MicroTask Queue", this queue is similar to "callback queue" but it stores such callback functions
+     which are related to promises.
+     And "MicroTask Queue" has higher priority than the "callback queue".
+     Then our event loop will keep checking if the callstack is empty, then if it finds some functions
+     inside "callback queue" or "MicroTask queue" then it will take it and execute it.
