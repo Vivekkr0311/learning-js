@@ -1,0 +1,21 @@
+Javascript engine is used almost everywhere.
+Javascript can run inside.
+ - Browser
+ - Server
+ - Smartwatch
+ - Ligthbulb (smart bulb)
+ - Robots
+
+ Javascript can run on all these devices because of Javascript Runtime Environment.
+ Javascript runtime environment is like a big container which has everything which is required
+ to run javascript code.
+
+This javascript runtime environment has:
+  - Javascript engine: To run any javascript code, you need javascript engine.
+  - Set of APIs: These APIs are used to connect to outer environment.
+  - Event loop: Which task is to execute callbacks which are inside "MircoTask Queue" and "Callback Queue".
+  - MicroTask Queue: Callbacks associated with fetch are kept here.
+  - Callback Queue: Callback associated with DOM alteration will be kept here.
+
+Javascript engine is the heart of the javascript runtime environment.
+Browsers can run your javascript code just because of browsers has Javascript Runtime Environment.
