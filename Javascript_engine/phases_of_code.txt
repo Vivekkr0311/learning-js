@@ -3,3 +3,23 @@ Javascript engine takes your code and then.
 1. First it parses it.
 2. Compiles it.
 3. Executes it.
+
+- Parsing: Code is converted into the token.
+- Then Syntax Parser takes this stream of token check for syntax. Syntax parser generates AST (Abstract Syntax Tree).
+- Compilation and Execution goes in hand to hand.
+- The AST is passed to interpreter, and converts code into the bytecode.
+- And then bytecode is executed. In the meantime compiler tries to optimize the bytecode hand in hand.
+  So, job of compiler is to optimize the code during runtime, this is why it is called "JIT Compilation".
+
+  In some javascript engine there is AOT. Ahead Of Time compilation. Compiler takes the code before execution and tries
+  to optimize it as much as it can. Then it generates the bytecode which will go into the execution phase.
+
+- Execution Phase: This execution phase used "Memory Heap" and a "callstack" to execute the bytecode.
+- 
+
+
+Javascript has something called as "JIT Compilation". Just In Time Compilation.
+Javascript behaves as interpreted language as well as compiled language, everything
+depends on javascript engine.
+
+JIT Compilation uses interpreter as well as compiler.
