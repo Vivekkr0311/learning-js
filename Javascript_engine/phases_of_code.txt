@@ -1,0 +1,5 @@
+You javascript code goes through various phases.
+Javascript engine takes your code and then.
+1. First it parses it.
+2. Compiles it.
+3. Executes it.

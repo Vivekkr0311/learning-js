@@ -27,9 +27,8 @@ some can be same, some APIs can be different.
 You can find on internet there are lot of javascript engines.
  - Microsoft browser has javscript enginer known as "Chakara".
  - Mozilla Firefox has "SpiderMonkey".
- - Google Chrome has "v8". This "v8" is also used in "node.js".
+ - Google Chrome has "v8". This "v8" is also used in "node.js". "v8" is written in Low Level Language C++.
 
  You can create your own javascript engine as well. Any javascript engine
  must follow ECMAScript standards. ECMAScript is like governer of javascript.
 
- 
