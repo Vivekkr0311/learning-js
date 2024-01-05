@@ -19,3 +19,17 @@ This javascript runtime environment has:
 
 Javascript engine is the heart of the javascript runtime environment.
 Browsers can run your javascript code just because of browsers has Javascript Runtime Environment.
+
+Node.js also has Javascript Runtime Environment. Node.js can run javascript code outside the browser.
+Different Javascript Runtime Environment has different APIs calls for connecting to outer environment,
+some can be same, some APIs can be different.
+
+You can find on internet there are lot of javascript engines.
+ - Microsoft browser has javscript enginer known as "Chakara".
+ - Mozilla Firefox has "SpiderMonkey".
+ - Google Chrome has "v8". This "v8" is also used in "node.js".
+
+ You can create your own javascript engine as well. Any javascript engine
+ must follow ECMAScript standards. ECMAScript is like governer of javascript.
+
+ 
