@@ -1,0 +1,15 @@
+Suppose you have this code:
+    function cb(){
+        console.log("Callback");
+    }
+    setTimeout(cb, 5000);
+
+    //And millions of line of code is here.
+
+Lets say this millions of line code takes 10 seconds to execute.
+In this case, callback function of setTimeout will not execute untill
+this million of lines of code is finished executing.
+
+This is why people say "Don't block the main thread".
+Here, millions of line of code was blocking the main thread (the callstack).
+This is why, callback of timeout did not get chance to get into the callstack and execute.
