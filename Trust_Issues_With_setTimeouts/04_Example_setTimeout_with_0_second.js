@@ -7,3 +7,5 @@ function cb(){
 setTimeout(cb, 0);
 
 console.log("End");
+
+//Here, cb will be executed later after sometime in the main thread.
