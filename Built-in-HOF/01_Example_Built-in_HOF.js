@@ -15,4 +15,7 @@ console.log(tripl);
 const binarY = arr.map((x) => {
     return x.toString(2);
 });
+//This can be written as
+const binarYTWO = arr.map((x) => x.toString(2));
 console.log(binarY);
+console.log(binarYTWO);
