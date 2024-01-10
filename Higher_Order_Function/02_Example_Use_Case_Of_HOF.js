@@ -30,3 +30,9 @@ const diameter = function (radius){
     return output;
 };
 console.log(diameter(radius));
+
+//There is something called as DRY in software development.
+//Don't Repeat Yourself.
+
+//We have so many repitions in our code, so for sake of optimizing it we are gonna
+//eliminate some redundant code.
