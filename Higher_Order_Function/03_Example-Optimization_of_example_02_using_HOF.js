@@ -12,6 +12,9 @@ const diameter = function (r){
     return 2 * r;
 }
 
+//This below function "calculate" is similar to javascript function called
+//"map". "map" function maps whole array to some logic and it will return an array.
+//"map" function is a example of higher order function.
 const calculate = function (radius, logic){
     const output = [];
     for(let i = 0; i < radius.length; i++){
@@ -20,6 +23,11 @@ const calculate = function (radius, logic){
     return output;
 }
 
+//Use case of "map" function.
+const output = radius.map(area);
+console.log("Using map " + output);
+
+console.log("-----------------------")
 console.log(calculate(radius, area));
 console.log(calculate(radius, circumeference));
 console.log(calculate(radius, diameter));
