@@ -1,0 +1,11 @@
+map: map function is used to transform an array. You can pass one array and get a different array.
+    example:
+            arr = [5, 1, 3, 2, 6]
+
+            Then you can get:
+                double = [10, 2, 6, 4, 12]
+                triple = [30, 3, 9, 6, 18]
+                or
+                binary = ["101", "1", "11", "10", "110"]
+    - we give array name and then using "." operator on that array we call the function "map".
+      This "map" function takes a logic as input which tells "map" how to transform this array.
