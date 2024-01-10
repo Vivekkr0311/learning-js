@@ -16,6 +16,8 @@ const diameter = function (r){
 //"map". "map" function maps whole array to some logic and it will return an array.
 //"map" function is a example of higher order function.
 const calculate = function (radius, logic){
+    //This function has the similar logic what "map" function has internally but "map"
+    //has some additional checks, but basic is similar.
     const output = [];
     for(let i = 0; i < radius.length; i++){
         output.push(logic(radius[i]));
