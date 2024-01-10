@@ -9,3 +9,5 @@ map: map function is used to transform an array. You can pass one array and get 
                 binary = ["101", "1", "11", "10", "110"]
     - we give array name and then using "." operator on that array we call the function "map".
       This "map" function takes a logic as input which tells "map" how to transform this array.
+
+filter: filter funtion is used to filter values inside an array.
