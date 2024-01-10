@@ -1,6 +1,8 @@
 const arr = [5, 1, 3, 2, 6];
 
-const double = arr.map(function (num) {  return num*2; });
+const double = arr.map(function (num) {  
+    return num*2; }
+);
 console.log(double);
 
 function triple(x){
