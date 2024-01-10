@@ -15,8 +15,8 @@ const diameter = function (r){
 //Now this function "calculate" will be available for array that you will create.
 Array.prototype.calculate = function (logic){
     const output = [];
-    for(let i = 0; i < radius.length; i++){
-        output.push(logic(radius[i]));
+    for(let i = 0; i < this.length; i++){
+        output.push(logic(this[i]));
     }
     return output;
 }
