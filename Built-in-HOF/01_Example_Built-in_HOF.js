@@ -11,9 +11,8 @@ function triple(x){
 const tripl = arr.map(triple);
 console.log(tripl);
 
-function binary(x){
+//Using arrow fuction syntax.
+const binarY = arr.map((x) => {
     return x.toString(2);
-}
-
-const binarY = arr.map(binary);
+});
 console.log(binarY);
