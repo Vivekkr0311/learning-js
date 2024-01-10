@@ -1,2 +1,7 @@
 Any function which takes another function as an argument or returns a function
 called as "Higher Order function".
+
+The function which is passed into another function is called "callback" function, which called
+somewhere else in the program.
+
+These are only possible because functions are first class citizen in the javascript.
