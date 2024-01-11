@@ -1,0 +1,7 @@
+Javascript is asynchoronous single threaded language.
+Javascirpt has only one call stack, and javascript can
+execute only one thing at a time.
+
+But using callback we can execute asynchoronous things in javascript.
+We can pass some piece of code as a callback function which can be
+executed later point of time.
