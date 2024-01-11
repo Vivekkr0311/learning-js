@@ -11,3 +11,7 @@ map: map function is used to transform an array. You can pass one array and get 
       This "map" function takes a logic as input which tells "map" how to transform this array.
 
 filter: filter funtion is used to filter values inside an array.
+
+reduce: reduce takes all values of the array, and comes with single value for these values.
+        reduce is used in the places where you want to iterate over the array and compute
+        some value.
