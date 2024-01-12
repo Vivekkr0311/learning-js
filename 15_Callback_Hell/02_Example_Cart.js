@@ -28,4 +28,6 @@ api.createOrder(cart, function(){
 //When APIs are dependent with each other, we use this kind of nested callback.
 //One callback is calling another callback, and that callback is also calling 
 //another callback and so on, this thing is called "Callback Hell".
-//Our code starts to grow horizontally instead of vertically.
+//Our code starts to grow horizontally instead of vertically. This stucuture
+//is also known as "Pyramid of Doom" in programming.
+//This type of code structure is very unreadable and unmaintainable.
