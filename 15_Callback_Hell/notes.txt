@@ -1,4 +1,4 @@
-Javascript is asynchoronous single threaded language.
+Javascript is synchoronous single threaded language.
 Javascirpt has only one call stack, and javascript can
 execute only one thing at a time.
 
