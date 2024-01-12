@@ -25,3 +25,7 @@ api.createOrder(cart, function(){
 
 //When we need to use this kind nested callback functions,
 //this scenario is called "Callback Hell".
+//When APIs are dependent with each other, we use this kind of nested callback.
+//One callback is calling another callback, and that callback is also calling 
+//another callback and so on, this thing is called "Callback Hell".
+//Our code starts to grow horizontally instead of vertically.
