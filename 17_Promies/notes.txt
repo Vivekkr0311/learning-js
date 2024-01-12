@@ -1,0 +1,21 @@
+const cart ["shoes", "pants", "kurta"];
+
+createOrder(cart, function(orderID){
+    proceedToPayment(orderID);
+});
+
+Here, we passing our callback in createOrder API, and blindly trusting it.
+We are giving control of our program to this API.
+We are passing callback inside another function.
+
+const promise = createOrder(cart);
+promise.then(function(orderID){
+    proceedToPayment(orderID);
+});
+
+But here, we are attaching our function to promise.
+We are attaching callback to promise object.
+We are not lossing control of our program.
+
+There is difference between Passing a callback and attaching a callback.
+
