@@ -17,3 +17,10 @@ const user = fetch(GITHUB_API);
 //PromiseState tells in which state the promise is. Initially
 //"pending" will be PromiseState, and once we get the data back.
 //The PromiseState will be "fullfilled" state.
+
+console.log(user);
+
+//Now, let's attach a callback with the promise.
+user.then(function(data){ //user data will be captured here in the function parameter "data".
+    console.log(data);
+});
