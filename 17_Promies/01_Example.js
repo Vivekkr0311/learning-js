@@ -18,3 +18,11 @@ const promise = createOrder(cart);
 promise.then(function (orderID){
     proceedToPayment(orderID);
 });
+
+//When the promise gets filled with data then only this function is called.
+//And this function is called only once.
+//Promises give us gurantee to call this function when the object is filled by the data,
+//using promises we don't loose control of our program, as we are not depending on other
+//function to call this function, we don't wait, we just proceed with our code, and when
+//the object is filled by actual data, we call this function which is attached with the
+//promise.
