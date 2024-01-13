@@ -13,3 +13,15 @@ createOrder(cart, function(orderID){
 createOrder(cart).then(function(orderID){
     proceedToPayment(orderID);
 });
+
+//Let's increase our promise chain.
+createOrder(cart)
+    .then(function (orderID){
+        proceedToPayment(orderID);
+    })
+    .then(function (paymentInfo){
+        showOrderSummary(paymentInfo);
+    })
+    .then(function (paymentInfo){
+        updateWalletBalance(paymentInfo);
+    });
