@@ -17,6 +17,11 @@ const user = fetch(GITHUB_API);
 //PromiseState tells in which state the promise is. Initially
 //"pending" will be PromiseState, and once we get the data back.
 //The PromiseState will be "fullfilled" state.
+//The PromiseState can be "Rejected" also.
+//So, basically, a promise object has three state.
+// 1. Pending
+// 2. Fullfilled.
+// 3. Rejected.
 
 console.log(user);
 
