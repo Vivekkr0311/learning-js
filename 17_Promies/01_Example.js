@@ -4,6 +4,8 @@ createOrder(cart); //returns orderID
 
 const promise = createOrder(cart);
 // A promise is nothing but a special object which will contain data value with it.
+//Promise object is immutable, it cannot be changed. We can pass it anywhere in our code
+//and we don't need worry if someone can mutate the data.
 // As soon as javascript executes this line "const promise = createOrder(cart);", we get
 // something like below. A promise with empty object.
 // like {data: undefined}

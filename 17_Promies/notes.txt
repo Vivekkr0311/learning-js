@@ -19,3 +19,13 @@ We are not lossing control of our program.
 
 There is difference between Passing a callback and attaching a callback.
 
+Interview Questions:
+
+Q1: What is a promise in Javascript ?
+ans: Def1: A promise object is a placeholder which be filled later with a value.
+     Promise is a placeholder for a certain amount of time untill we receive
+     data from asynchronous operation.
+
+     Def2: Some people say, it is a container for future value.
+     Def3: According to MDN web docs, A promise is an object representing the eventual
+     completion or failure of an asynchronous operation.
