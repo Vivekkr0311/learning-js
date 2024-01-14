@@ -5,18 +5,26 @@ createOrder(cart)
         console.log(orderID);
         return orderID;
     })
+    .catch(function(){
+        console.log("This catch is for only handling cart error.")
+    })
     .then(function (orderID){
         return proceedToPayment(orderID);
+    })
+    .catch(function(){
+        console.log("This catch is only for handling payment error.")
     })
     .then(function(paymentInfo){
         console.log(paymentInfo);
     })
     .catch(function (err){
-        //This will catch any error occured in this Promise chain.
         console.log(err.message)
     })
     .then(function(){
         console.log("Not matter what happens, error comes or not, this will execute.")
+    })
+    .catch(function(){
+        console.log("This will be generic catch.")
     });
 
 function createOrder(cart){
