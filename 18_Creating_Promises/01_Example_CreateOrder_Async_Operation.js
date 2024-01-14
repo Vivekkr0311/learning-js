@@ -4,8 +4,12 @@ const promise = createOrder(cart); // orderID
 
 
 //Consumer part.
-promise.then(function(){
-    proceedToPayment(orderID);
+promise.then(function(orderID){
+    console.log(orderID);
+   // proceedToPayment(orderID);
+})
+.catch(function(err){
+    console.log(err.message);
 });
 
 //Producer part.
@@ -34,4 +38,8 @@ function createOrder(cart){
         }
     ); // This is a Promise constructor.
     return pr;
+}
+
+function validateCart(cart){
+    return true;
 }
