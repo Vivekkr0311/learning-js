@@ -42,3 +42,29 @@ There are four major Promise APIs.
                                 p3 takes 2 secs
 
                          Output: [val1, err, val2], after 3 secs.
+
+3. Promise.race(): It will give the value of first setteled promise.
+                   eg: 
+                   a. Promise.race([p1, p2, p3]);
+                        p1 takes 3 secs
+                        p2 takes 1 sec
+                        p3 takes 2 secs
+
+                    result: (value2), it is not an array, it is a value.
+
+                   b. Similarly,
+                        p1 takes 3 secs
+                        p2 takes 5 sec
+                        p3 takes 2 secs
+
+                    result: (value3), it is not an array, it is a value.
+
+                   c. Similarly, if error occurs first, we will get error from the first failed Promise.
+                        p1 takes 3 secs
+                        p2 takes 1 sec, but it fails in 1 secs
+                        p3 takes 2 secs
+
+                    result: (Error from p2), it is not an array, it is a value.
+
+                So, it will give the result of first setteled promise, does not matter if it is failed or success.
+                It will not wait for other promises to finish.
