@@ -18,5 +18,7 @@ const p3 = new Promise((resolve, reject) => {
 Promise.all([p1, p2, p3]).then(res => {
     console.log(res);
 }).catch((err) => {
-    console.log(err);
+    //Always this type of "catch" clause to handle "uncaught error".
+    //It is not good practice to leave uncaught error.
+    console.error(err);
 });
