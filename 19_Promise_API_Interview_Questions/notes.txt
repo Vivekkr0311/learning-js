@@ -68,3 +68,32 @@ There are four major Promise APIs.
 
                 So, it will give the result of first setteled promise, does not matter if it is failed or success.
                 It will not wait for other promises to finish.
+
+4. Promise.any(): It will wait for first promise to get succcess.
+                eg:
+                Promise.any([p1, p2, p3]);
+
+                a. p1 takes 3 sec to success
+                   p2 takes 1 sec to succcess
+                   p3 takes 2 secs to succcess
+
+                   Then output will be (value1)
+
+                b. p1 takes 3 sec to success
+                   p2 takes 1 sec to fail
+                   p3 takes 2 secs to succcess
+
+                   Then output will be (value3)
+                
+                c. p1 takes 3 sec to success
+                   p2 takes 1 sec to fail
+                   p3 takes 2 secs to fail
+
+                   Then output will be (value1)
+                
+                d. p1 takes 3 sec to fail
+                   p2 takes 1 sec to fail
+                   p3 takes 2 secs to fail
+
+                   Then output will be an aggregated error.
+                   Array of all the error of all respective promises.
