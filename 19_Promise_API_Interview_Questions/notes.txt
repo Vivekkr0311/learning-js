@@ -17,3 +17,15 @@ There are four major Promise APIs.
 
                 Once these all are resolved, Promise.all() will give us back
                 array having result of all these API calls. It will wait for all of these to complete.
+                In this case, it will give result after 3 secs as maximum time taken for one the API is
+                3 sec.
+
+                And as soon as any of these promises gets rejected, Promise.all() will throw an error.
+                In this case, it will not wait for 3 secs, let's say p2 gets failed after 1 secs, then
+                immediately after 1 sec it will return failure message. Promise.all() will not wait for all the
+                promises, even if other promises might get accepted. Promise.all() will not cancel other promises
+                it will just throw an error when any one of them get rejected.
+
+                Promise.all() work like, All or none..
+
+                Promises cannot be cancel in between, once the promise made a request, it cannot be canceled.
