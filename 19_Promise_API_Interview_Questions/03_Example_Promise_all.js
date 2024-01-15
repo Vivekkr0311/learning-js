@@ -4,13 +4,13 @@ const p1 = new Promise((resolve, reject) => {
 });
 
 const p2 = new Promise((resolve, reject) => {
-    //This is mimicing an API call, which will be rejected after 1 sec.
-    setTimeout(() => reject("P2 Fail"), 1000);
+    //This is mimicing an API call, which will give success message after 1 sec.
+    setTimeout(() => resolve("P2 success"), 1000);
 });
 
 const p3 = new Promise((resolve, reject) => {
-    //This is mimicing an API call, which will give success message after 2 secs.
-    setTimeout(() => resolve("P3 success"), 2000);
+    //This is mimicing an API call, which will be rejected after 2 secs.
+    setTimeout(() => reject("P3 fail"), 2000);
 });
 
 
