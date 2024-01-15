@@ -8,6 +8,8 @@ There are four major Promise APIs.
                 In such cases this is used. When we need to handle
                 multiple Promises together (multiple API calls).
 
+                It is also known as "Fail Fast".
+
                 Promise.all(), it takes array of promies as a input.
                 eg: Promise.all([p1, p2, p3])
                 This will make three parallel API calls.
@@ -69,7 +71,8 @@ There are four major Promise APIs.
                 So, it will give the result of first setteled promise, does not matter if it is failed or success.
                 It will not wait for other promises to finish.
 
-4. Promise.any(): It will wait for first promise to get succcess.
+4. Promise.any(): It will wait for first promise to get succcess. It is success seeking API.
+                  It is seeking a first success.
                 eg:
                 Promise.any([p1, p2, p3]);
 
