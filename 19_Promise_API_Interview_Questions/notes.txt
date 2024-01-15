@@ -29,3 +29,16 @@ There are four major Promise APIs.
                 Promise.all() work like, All or none..
 
                 Promises cannot be cancel in between, once the promise made a request, it cannot be canceled.
+
+2. Promise.allSettled(): This is used when we want results even if one promise gets fail, other might get success results.
+                         For such situation we use Promise.allSettled().
+
+                         Promise.allSettled() it will wait for all promises to get setteled(success or failure), even if
+                         one of the promises gets failed.
+
+                         eg Promise.allSettled([p1, p2, p3]);
+                                p1 takes 3 secs
+                                p2 takes 1 sec
+                                p3 takes 2 secs
+
+                         Output: [val1, err, val2], after 3 secs.
