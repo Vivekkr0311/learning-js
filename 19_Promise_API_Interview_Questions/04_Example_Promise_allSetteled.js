@@ -17,10 +17,11 @@ const p3 = new Promise((resolve, reject) => {
 //p1, p2, and p3 are promises, these can be API calls also.
 //Promise.allSettled() will wait for all the promise to get setteled, then
 //it will give the result of respective promises.
-Promise.allSettled([p1, p2, p3]).then(res => {
-    console.log(res);
-}).catch((err) => {
-    //Always this type of "catch" clause to handle "uncaught error".
-    //It is not good practice to leave uncaught error.
-    console.error(err); //So, this will be a caught error.
-});
+//Promise.allSettled() give array of objects.
+//Promise.allSettled() is the safest.
+Promise.allSettled([p1, p2, p3])
+    .then(res => {
+        console.log(res);
+    }).catch((err) => {
+        console.error(err);
+    });
