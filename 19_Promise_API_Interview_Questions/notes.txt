@@ -100,3 +100,9 @@ There are four major Promise APIs.
 
                    Then output will be an aggregated error.
                    Array of all the error of all respective promises.
+
+Setteled: This means you got the result.
+         Once the promise is settled, it can have two result.
+
+         a. Resolve: Success/ Fullfilled.
+         b. Reject: Failed/ Rejected.
