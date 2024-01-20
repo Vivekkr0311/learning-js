@@ -1,0 +1,13 @@
+1. HTML/ CSS
+2. Javascript
+    -> Variables: var, let, const
+    -> Hoisting of variables
+    -> Functions: Arrow Functions, Higher Order Functions
+    -> Arrays and Objects: Array Destructuring, Object Destructuring, rest operator, spread operator
+    -> Conditions in Javascript: if-else, ternary operator, using && and ||, Optional Chaining
+    -> Array Methods: map(), filter(), reduce(), sort()
+    -> Event Listners: onClick, onBlur, onChange, onFocus, Search Event bubbling.
+                       setTimeout() & setInterval()
+    -> Asynchronous Event: Callbacks, Callback Hell, Promises, Promise APIs
+    -> Async Await
+    -> try and catch
