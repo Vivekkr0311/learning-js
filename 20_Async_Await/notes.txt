@@ -1,0 +1,6 @@
+* What is async ??
+-> async is a keyword, which is used before function name to create
+   a async function.
+
+* What is aync function ?
+-> async functions always returns a promise.
