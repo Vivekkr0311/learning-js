@@ -1,0 +1,10 @@
+this keyword behaves differently in these environment.
+
+1. Global Space
+2. Inside a function
+3. In strict mode - (this substitution)
+4. this value depends on how this is called (window)
+5. Inside a object's method
+6. Call apply bind methods (sharing methods)
+7. Inside arrow function
+8. Inside DOM
