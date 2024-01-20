@@ -12,4 +12,5 @@
 
 * async and await are used together to handle Promises.
 
-* Javascript does not actually wait, it appears to be waiting.
+* Javascript does not actually wait, it appears to be waiting. The function is suspended from the callstack
+  for that time. In between if something else comes in the callstack,javascript executes that thing quickly.

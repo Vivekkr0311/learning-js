@@ -29,6 +29,8 @@ async function handlePromise(){
     //Calling second time.
     //This will be printed after 10 secs.
     //Here, it will again suspend this function ("handlePromise") from the callstack.
+    //But by the time Javascript starts executing below call, it sees it is already being resolved
+    //so output is printed immediately.
     const val2 = await p2;
     console.log("Namaste Javascript 2");
     console.log(val2);
