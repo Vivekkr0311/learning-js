@@ -18,7 +18,8 @@ async function handlePromise(){
     //JS Engine will wait for Promise to be resolved. (It does not actually wait, it appears to be waiting)
     //Program will wait here.
     //This will be printed after 5 secs.
-    //And after executing below this function "handlePromise" will be suspended from the call stack.
+    //And after executing below this function "handlePromise" will be suspended from the call stack. And it will continue executing from
+    //it left.
     //so that other things can be executed, as javascript is a synchronous single threaded programming languaage.
     //And once this is below is resolved then it will move ahead.
     const val = await p1;
@@ -27,6 +28,7 @@ async function handlePromise(){
 
     //Calling second time.
     //This will be printed after 10 secs.
+    //Here, it will again suspend this function ("handlePromise") from the callstack.
     const val2 = await p2;
     console.log("Namaste Javascript 2");
     console.log(val2);
