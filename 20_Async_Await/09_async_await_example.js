@@ -20,6 +20,7 @@ async function handlePromise(){
     //This will be printed after 5 secs.
     //And after executing below this function "handlePromise" will be suspended from the call stack.
     //so that other things can be executed, as javascript is a synchronous single threaded programming languaage.
+    //And once this is below is resolved then it will move ahead.
     const val = await p1;
     console.log("Namaste Javascript 1");
     console.log(val);
