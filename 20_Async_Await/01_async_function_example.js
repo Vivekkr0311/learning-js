@@ -6,4 +6,7 @@ async function getData(){
     return "Namaste";
 }
 
-console.log(getData())
+const dataPromise = getData();
+console.log(dataPromise)
+
+dataPromise.then(res => console.log(res));
