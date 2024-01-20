@@ -11,3 +11,5 @@
    async function.
 
 * async and await are used together to handle Promises.
+
+* Javascript does not actually wait, it appears to be waiting.
