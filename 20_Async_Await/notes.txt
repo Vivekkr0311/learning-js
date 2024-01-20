@@ -2,5 +2,12 @@
 -> async is a keyword, which is used before function name to create
    a async function.
 
-* What is aync function ?
+* What is async function ?
 -> async functions always returns a promise.
+
+* What is await ?
+-> We use await in front of the Promise.
+   await is the keyword that can only be used inside an
+   async function.
+
+* async and await are used together to handle Promises.
