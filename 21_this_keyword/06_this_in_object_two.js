@@ -7,6 +7,7 @@ const obj = {
         //this function is method now, because it is inside a object.
         console.log(this);
         console.log(this.a); //This will print value of 'a'.
+        //This is similar to "obj.a".
     }
 }
 

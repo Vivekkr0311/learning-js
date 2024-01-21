@@ -21,3 +21,8 @@ this keyword behaves differently in these environment.
                     global object only in non-strict mode.
 
 4. Depends on how function is called: Value of "this" keyword also depends on how the function is called.
+5. See example 05 and 06.
+6. call, apply and bind methods: These thre are very important methods. These are used when we are sharing
+                                 methods. If there one method in a obj1, and you want to share this method
+                                 with obj2, then there is way of doing this using call, apply, and bind methods.
+                                 
