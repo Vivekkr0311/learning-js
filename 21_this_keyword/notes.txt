@@ -16,3 +16,6 @@ this keyword behaves differently in these environment.
 2. Inside a function:
 
 3. In strict mode: "this" keyword works differently in strict mode and in non-strict mode.
+
+                    If the value of "this" is undefined or null, this keyword will be replaced with
+                    global object only in non-strict mode.
