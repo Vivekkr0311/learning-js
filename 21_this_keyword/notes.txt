@@ -12,3 +12,7 @@ this keyword behaves differently in these environment.
 1. Global Space: "this" keyword in global spcae represents the "Global Object", and that
                  object can be different for other devices, it depends where you are running
                  javascript code.
+
+2. Inside a function:
+
+3. In strict mode: "this" keyword works differently in strict mode and in non-strict mode.
