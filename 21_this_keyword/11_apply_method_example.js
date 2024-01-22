@@ -1,4 +1,5 @@
 //The only difference between call() and apply() method is how you pass the arguments.
+//Still function borrowing happens using apply().
 
 let student1 = {
     firstName: "student1",
