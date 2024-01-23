@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>this keyword in DOM</title>
+        <script src="/index.js"></script>
+    </head>
+    <bod>
+        <h1>Hello, this is Vivek!!</h1>
+        <!-- value of "this" will be button -->
+        <!-- on clicking the button you will see a alter having value of this,
+        which will be this button itself. -->
+
+        <!-- so we can say value of this inside DOM elements is reference to HTML element. -->
+        <button onclick="alert(this)">Click me!!</button>
+        <button onclick="alert(this.tagName)">Click me two!!</button>
+    </bod>
+</html> 
