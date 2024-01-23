@@ -8,6 +8,7 @@ this keyword behaves differently in these environment.
 6. Call apply bind methods (sharing methods)
 7. Inside arrow function
 8. Inside DOM
+9. Inside class
 
 1. Global Space: "this" keyword in global spcae represents the "Global Object", and that
                  object can be different for other devices, it depends where you are running
